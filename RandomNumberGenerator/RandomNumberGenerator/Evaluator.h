@@ -1,0 +1,24 @@
+#pragma once
+
+#ifndef EVALUATOR_H_INCLUDED
+#define EVALUATOR_H_INCLUDED
+
+#include <iostream>
+#include <math.h>
+#include "Generator.h"
+
+using namespace std;
+
+class Evaluator
+{
+public:
+	Evaluator(Generator g, int n);
+	float Evaluate();
+
+private:
+	Generator m_generator;
+	int m_numbersGenerated;
+	bool IsInside(float x, float y);
+};
+
+#endif 
