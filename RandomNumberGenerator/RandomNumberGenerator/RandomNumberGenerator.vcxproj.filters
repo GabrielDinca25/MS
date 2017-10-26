@@ -27,6 +27,12 @@
     <ClInclude Include="Evaluator.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="BST.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreviousValues.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LCG.cpp">
@@ -42,6 +48,12 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Evaluator.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BST.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviousValues.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

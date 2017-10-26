@@ -4,7 +4,7 @@
 #define GENERATOR_H_INCLUDED
 
 #include <iostream>
-
+#include "PreviousValues.h"
 using namespace std;
 
 class Generator
@@ -19,6 +19,7 @@ public:
 
 protected:
 	int m_seed;
+	PreviousValues previousValuesChecker;
 	int GetNumberOfDigits(int);
 };
 

@@ -12,11 +12,11 @@ using namespace std;
 class Evaluator
 {
 public:
-	Evaluator(Generator g, int n);
+	Evaluator(Generator* g, float n);
 	float Evaluate();
 
 private:
-	Generator m_generator;
+	Generator* m_generator;
 	int m_numbersGenerated;
 	bool IsInside(float x, float y);
 };

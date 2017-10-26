@@ -6,11 +6,13 @@ float LCG::Next()
 
 	x = (m_seed * m_a + m_c) % m_m;
 
-	if (m_seed == x)
+	previousValuesChecker.AvoidRepetition(x);
+
+	/*if (m_seed == x)
 	{
 		x += 25;
 	}
-
+	*/
 	m_seed = x; 
 
 	return x / m_m;

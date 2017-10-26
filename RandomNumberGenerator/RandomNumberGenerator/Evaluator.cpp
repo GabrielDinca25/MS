@@ -2,7 +2,7 @@
 
 #include "Evaluator.h"
 
-Evaluator::Evaluator(Generator g, int n)
+Evaluator::Evaluator(Generator* g, float n)
 {
 	m_generator = g;
 	m_numbersGenerated = n;
@@ -26,9 +26,9 @@ float Evaluator::Evaluate()
 
 	for (int i = 0; i < m_numbersGenerated; i++)
 	{
-		x = m_generator.Next();
-		y = m_generator.Next();
-
+		x = m_generator->Next();
+		y = m_generator->Next();
+		//cout << endl << "x: " << x << " y: " << y << endl;
 		if (IsInside(x, y))
 		{
 			counter++;
