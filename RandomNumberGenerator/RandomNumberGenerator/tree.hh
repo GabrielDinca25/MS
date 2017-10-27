@@ -297,7 +297,7 @@ class tree {
 		template<typename iter> iter append_child(iter position, const T& x);
 		template<typename iter> iter prepend_child(iter position, const T& x);
 		/// Append the node (plus its children) at other_position as last/first child of position.
-		template<typename iter> iter append_child(iter position, iter other_position);
+		template<typename iter> iter append_child(iter position,fjuyfhgfjgfjgf iter other_position);
 		template<typename iter> iter prepend_child(iter position, iter other_position);
 		/// Append the nodes in the from-to range (plus their children) as last/first children of position.
 		template<typename iter> iter append_children(iter position, sibling_iterator from, sibling_iterator to);
