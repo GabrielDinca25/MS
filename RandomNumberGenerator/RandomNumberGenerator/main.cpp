@@ -6,16 +6,19 @@ int main()
 {
 
 	//Middle Square method
-	Generator* midsq = new MiddleSquare(745);
+	Generator* midsq = new MiddleSquare(9254);
 	Generator* lcg = new LCG(23, 17, 43, 100);
 	Evaluator lcgEvaluator(lcg, 1000);
 	Evaluator midsqEvaluator(midsq, 1000);
 	float result;
-	cout << "LCG result: " << endl;
-	result = lcgEvaluator.Evaluate();
-	cout << " " << fabs(result);
+
+	//cout << "LCG result: " << endl;
+	//result = lcgEvaluator.Evaluate();
+	//cout << " " << fabs(result);
+
 	cout << endl <<"MiddleSquare result: " << endl;
 	result = midsqEvaluator.Evaluate();
 	cout << " " << fabs(result);
+
 	return 0;
 }

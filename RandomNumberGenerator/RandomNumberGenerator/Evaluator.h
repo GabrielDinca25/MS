@@ -17,7 +17,7 @@ public:
 
 private:
 	Generator* m_generator;
-	int m_numbersGenerated;
+	float m_numbersGenerated;
 	bool IsInside(float x, float y);
 };
 

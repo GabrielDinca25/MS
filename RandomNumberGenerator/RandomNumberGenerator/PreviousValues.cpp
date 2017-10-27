@@ -7,5 +7,6 @@ void PreviousValues::AvoidRepetition(float generatedNumber)
 		generatedNumber += 25;
 	}
 	m_root = m_previousValues.Add_Node(m_root, generatedNumber);
+	m_previousValues.Display(m_root, 0);
 
 }

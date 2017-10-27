@@ -1,7 +1,11 @@
-﻿  MiddleSquare.cpp
-d:\vsworkspace\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(10): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\vsworkspace\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(18): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-d:\vsworkspace\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-d:\vsworkspace\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(21): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  RandomNumberGenerator.vcxproj -> D:\vsworkspace\RandomNumberGenerator\Debug\RandomNumberGenerator.exe
-  RandomNumberGenerator.vcxproj -> D:\vsworkspace\RandomNumberGenerator\Debug\RandomNumberGenerator.pdb (Partial PDB)
+﻿  PreviousValues.cpp
+  MiddleSquare.cpp
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(21): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  RandomNumberGenerator.vcxproj -> D:\Scoala\MS\RandomNumberGenerator\Debug\RandomNumberGenerator.exe
+  RandomNumberGenerator.vcxproj -> D:\Scoala\MS\RandomNumberGenerator\Debug\RandomNumberGenerator.pdb (Partial PDB)

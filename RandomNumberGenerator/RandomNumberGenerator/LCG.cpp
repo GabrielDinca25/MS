@@ -8,11 +8,6 @@ float LCG::Next()
 
 	previousValuesChecker.AvoidRepetition(x);
 
-	/*if (m_seed == x)
-	{
-		x += 25;
-	}
-	*/
 	m_seed = x; 
 
 	return x / m_m;

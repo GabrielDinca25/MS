@@ -28,7 +28,7 @@ float Evaluator::Evaluate()
 	{
 		x = m_generator->Next();
 		y = m_generator->Next();
-		//cout << endl << "x: " << x << " y: " << y << endl;
+		cout << endl << "x: " << x << " y: " << y << endl;
 		if (IsInside(x, y))
 		{
 			counter++;

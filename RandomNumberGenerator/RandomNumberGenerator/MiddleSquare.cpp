@@ -2,21 +2,21 @@
 
 float MiddleSquare::Next()
 {
-	int seedDigits, squareSeed;
+	int squareSeed;
 	float generatedNumber;
 
-	seedDigits = GetNumberOfDigits(m_seed);
 	squareSeed = m_seed * m_seed;
-	generatedNumber = (squareSeed / (int)pow(10, seedDigits / 2)) % (int)pow(10, seedDigits);
+	generatedNumber = (squareSeed / (int)pow(10, m_seedDigits / 2)) % (int)pow(10, m_seedDigits);
 
 	previousValuesChecker.AvoidRepetition(generatedNumber);
 
-	/*if(m_seed == generatedNumber)
-	{
-		generatedNumber += 25;
-	}*/
 	m_seed = generatedNumber;
+	if (GetNumberOfDigits(generatedNumber) < m_seedDigits)
+	{
+		generatedNumber = generatedNumber + pow(10, m_seedDigits-1);
+	}
 
-	float test = generatedNumber / pow(10, seedDigits);
-	return generatedNumber / pow(10, seedDigits);
+	float test = generatedNumber / pow(10, m_seedDigits);
+	cout << "test: " << test << endl;
+	return generatedNumber / pow(10, m_seedDigits);
 }

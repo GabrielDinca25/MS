@@ -18,6 +18,7 @@ class BinaryTree
 public:
 	Node *Add_Node(Node* root, float data);
 	bool Search(Node* node, float key);
+	void Display(Node* root, int level);
 
 private:
 	Node* m_root;

@@ -37,3 +37,16 @@ bool BinaryTree::Search(Node* root, float key)
 		return Search(root->right, key);
 	}
 }
+
+void BinaryTree::Display(Node* root, int level)
+{
+	int i;
+	if (root != 0)
+	{
+		Display(root->right, level + 1);
+		for (i = 0; i <= level; i++)
+			printf("      ");
+		printf("%d\n", root->key);
+		Display(root->left, level + 1);
+	}
+}
