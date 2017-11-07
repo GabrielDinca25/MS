@@ -33,6 +33,12 @@
     <ClInclude Include="PreviousValues.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="BinomialDistribution.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PoissonDistribution.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LCG.cpp">
@@ -54,6 +60,12 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="PreviousValues.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinomialDistribution.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PoissonDistribution.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

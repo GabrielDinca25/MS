@@ -17,8 +17,7 @@ public:
 	MiddleSquare(int s) : Generator(s) {}
 
 	float Next() override;
-//private:
-	//list<int> m_previousValues;
+
 };
 
 #endif 

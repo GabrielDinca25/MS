@@ -6,8 +6,6 @@ float LCG::Next()
 
 	x = (m_seed * m_a + m_c) % m_m;
 
-	previousValuesChecker.AvoidRepetition(x);
-
 	m_seed = x; 
 
 	return x / m_m;

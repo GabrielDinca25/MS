@@ -1,11 +1,6 @@
-﻿  PreviousValues.cpp
-  MiddleSquare.cpp
-d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\middlesquare.cpp(21): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
+﻿  main.cpp
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\main.cpp(15): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\main.cpp(16): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\scoala\ms\randomnumbergenerator\randomnumbergenerator\main.cpp(17): warning C4101: 'result': unreferenced local variable
   RandomNumberGenerator.vcxproj -> D:\Scoala\MS\RandomNumberGenerator\Debug\RandomNumberGenerator.exe
   RandomNumberGenerator.vcxproj -> D:\Scoala\MS\RandomNumberGenerator\Debug\RandomNumberGenerator.pdb (Partial PDB)

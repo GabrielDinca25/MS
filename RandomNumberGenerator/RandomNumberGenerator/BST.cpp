@@ -24,11 +24,11 @@ bool BinaryTree::Search(Node* root, float key)
 	{
 		return false;
 	}
-	else if (key == root->key)
+	else if(key == root->key)
 	{
 		return true;
 	}
-	else if(key < root->key)
+	else if (key < root->key)
 	{
 		return Search(root->left, key);
 	}

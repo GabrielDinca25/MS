@@ -11,7 +11,7 @@ public:
 	BinaryTree m_previousValues;
 	void AvoidRepetition(float generatedNumber);
 
-private:
+public:
 	Node* m_root = NULL;
 
 };

@@ -110,20 +110,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BinomialDistribution.h" />
     <ClInclude Include="BST.h" />
     <ClInclude Include="Evaluator.h" />
     <ClInclude Include="Generator.h" />
     <ClInclude Include="LCG.h" />
     <ClInclude Include="MiddleSquare.h" />
+    <ClInclude Include="PoissonDistribution.h" />
     <ClInclude Include="PreviousValues.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BinomialDistribution.cpp" />
     <ClCompile Include="BST.cpp" />
     <ClCompile Include="Evaluator.cpp" />
     <ClCompile Include="Generator.cpp" />
     <ClCompile Include="LCG.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MiddleSquare.cpp" />
+    <ClCompile Include="PoissonDistribution.cpp" />
     <ClCompile Include="PreviousValues.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

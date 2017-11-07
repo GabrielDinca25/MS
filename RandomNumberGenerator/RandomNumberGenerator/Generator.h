@@ -4,7 +4,8 @@
 #define GENERATOR_H_INCLUDED
 
 #include <iostream>
-#include "PreviousValues.h"
+#include "BST.h"
+
 using namespace std;
 
 class Generator
@@ -21,7 +22,8 @@ public:
 protected:
 	int m_seed;
 	int m_seedDigits;
-	PreviousValues previousValuesChecker;
+	BinaryTree m_previousValues;
+	Node* m_root = NULL;
 	int GetNumberOfDigits(int);
 };
 
