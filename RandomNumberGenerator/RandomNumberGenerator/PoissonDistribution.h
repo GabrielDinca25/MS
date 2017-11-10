@@ -13,7 +13,7 @@ public:
 	float lambda;
 	Generator* m_generator;
 
-	int Run();
+	float Run();
 };
 
 #endif

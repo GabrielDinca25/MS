@@ -118,6 +118,7 @@
     <ClInclude Include="MiddleSquare.h" />
     <ClInclude Include="PoissonDistribution.h" />
     <ClInclude Include="PreviousValues.h" />
+    <ClInclude Include="UniformGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinomialDistribution.cpp" />
@@ -129,6 +130,7 @@
     <ClCompile Include="MiddleSquare.cpp" />
     <ClCompile Include="PoissonDistribution.cpp" />
     <ClCompile Include="PreviousValues.cpp" />
+    <ClCompile Include="UniformGenerator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

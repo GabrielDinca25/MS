@@ -7,9 +7,9 @@ BinomialDistribution::BinomialDistribution(Generator* g, int n, float p)
 	this->p = p;
 }
 
-int BinomialDistribution::Run()
+float BinomialDistribution::Run()
 {
-	int x = 0;
+	float x = 0;
 	for (int i = 0; i < n; i++)
 	{
 		if (m_generator->Next() < p)
@@ -17,5 +17,5 @@ int BinomialDistribution::Run()
 			x++;
 		}
 	}
-	return x;
+	return x/n ;
 }

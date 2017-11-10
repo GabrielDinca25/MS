@@ -7,10 +7,11 @@ PoissonDistribution::PoissonDistribution(Generator* g, float n, float lambda)
 	this->lambda = lambda;
 }
 
-int PoissonDistribution::Run()
+float PoissonDistribution::Run()
 {
 	float L, e = 2.71828;
-	int k = 0, p = 1;
+	float k = 0;
+	double p = 1;
 
 	L = pow(e, -lambda);
 
@@ -20,5 +21,5 @@ int PoissonDistribution::Run()
 		p *= m_generator->Next();
 	} while (p > L);
 
-	return k - 1;
+	return k-1/n;
 }

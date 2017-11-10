@@ -12,7 +12,7 @@ public:
 	Generator* m_generator;
 	int n;
 	float p;
-	int Run();
+	float Run();
 
 };
 

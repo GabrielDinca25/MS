@@ -39,6 +39,9 @@
     <ClInclude Include="PoissonDistribution.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="UniformGenerator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LCG.cpp">
@@ -66,6 +69,9 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="PoissonDistribution.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UniformGenerator.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
