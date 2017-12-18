@@ -12,40 +12,47 @@ public class CoffeMachinePetriNetwork extends PetriNetwork{
 		Location location15 = new Location("15", 0);
 	
 		Transition transition1 = new Transition("5", new ArrayList<Arc>() {{ 
-			add(new Arc(1, "LT", location5));
-			add(new Arc(1, "TL", location0));
+			add(new Arc(1, "TL", location5));
+			add(new Arc(1, "LT", location0));
 			}}		
 		);
 		transitionList.add(transition1);
 		
 		
 		Transition transition2 = new Transition("5", new ArrayList<Arc>() {{ 
-			add(new Arc(1, "LT", location10));
-			add(new Arc(1, "TL", location5));
+			add(new Arc(1, "TL", location10));
+			add(new Arc(1, "LT", location5));
 			}}		
 		);
 		transitionList.add(transition2);
 		
 		Transition transition3 = new Transition("5", new ArrayList<Arc>() {{ 
-			add(new Arc(1, "LT", location15));
-			add(new Arc(1, "TL", location10));
+			add(new Arc(1, "TL", location15));
+			add(new Arc(1, "LT", location10));
 			}}		
 		);
 		transitionList.add(transition3);
 		
 		Transition transition4 = new Transition("10", new ArrayList<Arc>() {{ 
-			add(new Arc(1, "LT", location10));
-			add(new Arc(1, "TL", location0));
+			add(new Arc(1, "TL", location10));
+			add(new Arc(1, "LT", location0));
 			}}		
 		);
 		transitionList.add(transition4);
 
 		Transition transition5 = new Transition("10", new ArrayList<Arc>() {{ 
-			add(new Arc(1, "LT", location15));
-			add(new Arc(1, "TL", location5));
+			add(new Arc(1, "TL", location15));
+			add(new Arc(1, "LT", location5));
 			}}		
 		);
 		transitionList.add(transition5);
+		
+		/*Transition transition6 = new Transition("15", new ArrayList<Arc>() {{ 
+			add(new Arc(1, "TL", location0));
+			}}		
+		);
+		transitionList.add(transition6);
+		*/
 		
 		
 	}

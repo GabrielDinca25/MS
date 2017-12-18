@@ -14,19 +14,19 @@ public class Arc {
 	
 	public boolean isValid()
 	{
-		if((direction == "LT" && capacity < location.tokens) || direction == "TL")
+		if(direction.equals("1"))
 		{
 			return true;
 		}
 		else
 		{
-			return false;
+			return (capacity <= location.tokens);
 		}
 	}
 	
 	public void Update() 
 	{
-		if(direction == "LT")
+		if(direction.equals("1"))
 		{
 			location.tokens -= capacity;
 		}

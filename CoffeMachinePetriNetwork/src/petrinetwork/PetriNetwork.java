@@ -6,7 +6,7 @@ import java.util.Scanner;
 public abstract class PetriNetwork {
 	List<Transition> transitionList = new ArrayList<>();
 	
-	String getCurrentState()
+	public String getCurrentState()
 	{
 		if(transitionList.isEmpty())
 		{
@@ -33,12 +33,11 @@ public abstract class PetriNetwork {
 	
 	void execute(String tag) 
 	{	
-		System.out.println("Current State: " + getCurrentState());
 		List<Transition> validTransitions = new ArrayList<>();
 
 		for(Transition transition : transitionList)
-		{
-			if(transition.tag == tag && transition.isValid())
+		{	
+			if(transition.tag.equals(tag) && transition.isValid())
 			{
 				validTransitions.add(transition);
 			}
@@ -48,6 +47,7 @@ public abstract class PetriNetwork {
 		{
 			transition.Update();
 		}
+		//System.out.println("Current State: " + getCurrentState());
 	}
 	
 }
