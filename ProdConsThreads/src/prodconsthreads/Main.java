@@ -10,8 +10,18 @@ public class Main {
 		Consumer consumer = new Consumer();
 		Producer producer = new Producer();
 		
-		producer.run();
-		consumer.run();
+		producer.start();
+		consumer.start();
+		
+		try
+		{
+			producer.join();
+			consumer.join();
+		}
+		catch (Exception e)
+		{
+			System.out.println("Exception: " + e);
+		}
 		
 	}
 }

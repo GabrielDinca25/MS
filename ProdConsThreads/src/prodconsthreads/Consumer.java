@@ -1,20 +1,18 @@
 package prodconsthreads;
-
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Consumer implements Runnable {
+public class Consumer extends Thread {
 
 	public Thread thread;
 	private final Lock _mutex = new ReentrantLock(true); 
 
 	public void Consume()
 	{
-		System.out.println("Pe consume");
 		if(!Main.prod_queue.isEmpty())
 		{
 			Main.prod_queue.remove();
-			System.out.println("Product consumed \n");
+			System.out.println("Product consumed, size = " + Main.prod_queue.size());
 		}
 		try {
 			Thread.sleep(3000);
@@ -24,17 +22,14 @@ public class Consumer implements Runnable {
 
 	}
 	
-	@Override
 	public void run() {
 		
 		while(true)
 		{
 			try
 			{
-				System.out.println("Pe consume");
 				_mutex.lock();
 				Consume();
-				_mutex.unlock();
 			} catch (Exception e) {
 
 	            e.printStackTrace();

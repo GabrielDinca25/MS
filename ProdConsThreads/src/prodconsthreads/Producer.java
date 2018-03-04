@@ -2,7 +2,7 @@ package prodconsthreads;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Producer implements Runnable {
+public class Producer extends Thread {
 	public Thread thread;
 	private final Lock _mutex = new ReentrantLock(true); 
 	
@@ -20,7 +20,6 @@ public class Producer implements Runnable {
 		}
 	}
 	
-	@Override
 	public void run() {
 		
 		while(true)
