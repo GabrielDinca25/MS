@@ -8,7 +8,7 @@ public class Producer extends Thread {
 	
 	public void Produce()
 	{
-		if(Main.prod_queue.size() <= 4)
+		if(Main.prod_queue.size() <= Main.stackCapacity - 1)
 		{
 			Main.prod_queue.add(1);
 			System.out.println("Product produced, size = " + Main.prod_queue.size());
